@@ -201,6 +201,19 @@ a.border-button:hover {
 	margin-right: 10px;
 	border-radius: 50%;
   }
+.uppercase {
+	text-transform: uppercase !important;
+}
+nav img {
+    width: 32px;
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+}/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 990px) {
+    .logo-img {
+        max-width: 180px; /* Redimensiona para pantallas más pequeñas */
+		margin-top: -30px;
+    }
+}
 
 /* Sub Header Style */
 
@@ -418,16 +431,10 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/Mesa\ de\ trabajo\ 1@4x-3.png);
+	background-color: #091e2b;
 }
 
-.Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_02.jpg);
-}
-
-.Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03.jpg);
-}
 
 .Modern-Slider .NextArrow{
   position:absolute;
@@ -1169,10 +1176,10 @@ footer .contact-form button.filled-button:hover {
 #tabs ul li a {
 	text-transform: capitalize;
 	width: 100%;
-	padding: 30px 30px;
+	padding: 15px 30px;
 	display: inline-block;
 	background-color: var(--color-principal);
-  	font-size: 20px;
+  	font-size: 15px;
   	color: #121212;
   	letter-spacing: 0.5px;
   	font-weight: 700;
