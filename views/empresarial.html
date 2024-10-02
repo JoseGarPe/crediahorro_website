@@ -60,35 +60,8 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
     
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html"><h2>Crediahorro</h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link uppercase" href="../index.html">Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link uppercase" href="services.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link uppercase" href="about.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link uppercase" href="novedades.html">novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link uppercase" href="contact.html">Contactanos</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <header class="" id="menu">
+      
     </header>
 
     <!-- Page Content -->
@@ -330,5 +303,15 @@ https://templatemo.com/tm-545-finance-business
     <script src="../assets/js/owl.js"></script>
     <script src="../assets/js/slick.js"></script>
     <script src="../assets/js/accordions.js"></script>
+    <script>
+      // Cargar el menú desde el archivo externo
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch('menu.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('menu').innerHTML = data;
+          });
+      });
+    </script>
   </body>
 </html>
