@@ -196,6 +196,38 @@ a.border-button:hover {
   .modal {
 	z-index: 100000; /* Modal más alto que el menú */
   }
+  .text-wine {
+	color: var(--color-principal);
+	font-weight: bold;
+  }
+  .slick-prev, .slick-next {
+	font-size: 24px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3); /* Fondo gris translúcido */
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	position: absolute;  /* Para que estén posicionadas en el contenedor del slider */
+	top: 50%;  /* Centra las flechas verticalmente */
+	transform: translateY(-50%);  /* Ajusta el centrado exacto */
+  }
+  
+  .slick-prev {
+	left: 20px;  /* Ajusta la posición hacia la izquierda */
+  }
+  
+  .slick-next {
+	right: 20px; /* Ajusta la posición hacia la derecha */
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+	background-color: rgba(0, 0, 0, 0.5); /* Efecto hover para cambiar el fondo */
+  }
+  
 
   /* ------------------------------------------------------------------------------ contenedpr de imagenes ---------------------------------------------------------------- */
   
