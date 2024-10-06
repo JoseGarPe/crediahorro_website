@@ -173,6 +173,45 @@ a.border-button:hover {
     opacity: 0;
   }
 }
+/* ------------------------------------------------------------------------------ modal ------------------------------------------------------------------------------ */
+.modal-fullscreen {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	z-index: 1060; /* Asegura que esté sobre el menú */
+  }
+  
+  .modal-fullscreen .modal-content {
+	height: 100vh;
+	border: none;
+	border-radius: 0;
+  }
+  
+  .modal-backdrop {
+	z-index: 1040; /* Asegura que el fondo se ajuste detrás */
+  }
+  
+  .modal {
+	z-index: 100000; /* Modal más alto que el menú */
+  }
+
+  /* ------------------------------------------------------------------------------ contenedpr de imagenes ---------------------------------------------------------------- */
+  
+  /* Clase base para los contenedores con fondo */
+.img-fill {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	color: white; /* Ajusta si es necesario */
+  }
+  /* ===================================== ahorros ===================================== */
+  /* Estilo para el primer contenedor */
+  .img-1 {
+	background-image: url('../images/credito-ahorro/corriente.png');
+}
 /*----------------------------------------------------------------*/
 .benefits {
 	background-color: #fff;
@@ -556,7 +595,6 @@ ul.slick-dots {
 
 
 
-
 /* Request Form */
 
 .request-form {
@@ -594,10 +632,10 @@ ul.slick-dots {
 .service-item img {
 	width: 100%;
 	overflow: hidden;
+	height: auto;
 }
-
+/* ------------------------------------------------------ css para los cuadros de servicios ------------------------------------------------------ */
 .service-item .down-content {
-	background-color: #f7f7f7;
 	padding: 30px;
 }
 
@@ -611,8 +649,21 @@ ul.slick-dots {
 .service-item .down-content p {
 	margin-bottom: 20px;
 }
-
-
+.service-fill {
+	padding: 15px;
+}
+.border-item {
+	border-radius: 15px !important;
+}
+.service-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; /* Alinea el contenido hacia abajo */
+}
+.text-buttom {
+	margin-bottom: 50px; /* Ajusta el margen si es necesario */
+}
+/* ------------------------------------------------------ fin css para los cuadros de servicios ------------------------------------------------------ */
 
 /* Fun Facts */
 
