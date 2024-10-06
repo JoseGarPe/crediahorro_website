@@ -227,6 +227,15 @@ a.border-button:hover {
   .slick-prev:hover, .slick-next:hover {
 	background-color: rgba(0, 0, 0, 0.5); /* Efecto hover para cambiar el fondo */
   }
+  .slick-prev, .slick-next {
+	outline: none; /* Elimina el borde del foco */
+	border: none; /* Asegura que no haya borde en el botón */
+  }
+  
+  .slick-prev:focus, .slick-next:focus {
+	outline: none; /* Elimina el contorno que aparece al hacer clic */
+	box-shadow: none; /* Evita cualquier sombra alrededor del botón */
+  }
   
 
   /* ------------------------------------------------------------------------------ contenedpr de imagenes ---------------------------------------------------------------- */
