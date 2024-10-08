@@ -236,6 +236,36 @@ a.border-button:hover {
 	outline: none; /* Elimina el contorno que aparece al hacer clic */
 	box-shadow: none; /* Evita cualquier sombra alrededor del botón */
   }
+  /* Centrar las tarjetas y eliminar borde */
+.valor {
+  border: none; /* Eliminar el borde */
+  border-radius: 50%; /* Borde redondeado */
+  background-color: #02020210; /* Fondo opcional */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+}
+
+
+
+/* Asegurar que las imágenes se ajusten correctamente */
+.valor img {
+  width: 150px; /* Ajusta según el tamaño deseado */
+  height: auto;
+  margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+}
+
+/* Estilo para el título */
+.valor .card-title {
+  font-size: 23px;
+}
+
+/* Centrar contenido */
+.row.justify-content-center {
+  justify-content: center;
+  align-items: center;
+}
+
   
 
   /* ------------------------------------------------------------------------------ contenedpr de imagenes ---------------------------------------------------------------- */
