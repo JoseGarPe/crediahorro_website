@@ -6,10 +6,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+       <!--    <li class="nav-item active">
             <a class="nav-link uppercase" href="index.html">Inicio
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link uppercase" href="views/services.html">Servicios</a>
           </li>
@@ -17,7 +17,7 @@
             <a class="nav-link uppercase" href="views/about.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link uppercase" href="views/directivos.html">Cuerpos Directivos</a>
+            <a class="nav-link uppercase" href="views/directivos.html">Educación</a>
           </li>
           <li class="nav-item">
             <a class="nav-link uppercase" href="views/contact.html">Contactanos</a>
@@ -26,3 +26,24 @@
       </div>
     </div>
   </nav>
+  <script>
+    // Obtener la URL actual
+    const currentUrl = window.location.pathname;
+
+    // Seleccionar todos los elementos <li> del menú
+    const menuItems = document.querySelectorAll('.navbar-nav .nav-item');
+
+    // Recorrer cada item del menú
+    menuItems.forEach(item => {
+        // Obtener el href del enlace dentro del <li>
+        const link = item.querySelector('a');
+        const linkHref = link.getAttribute('href');
+
+        // Si el href coincide con la URL actual, agregar la clase 'active'
+        if (currentUrl.endsWith(linkHref)) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active'); // Remover 'active' si no es la página actual
+        }
+    });
+</script>

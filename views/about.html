@@ -345,16 +345,38 @@ https://templatemo.com/tm-545-finance-business
           }
       }
     </script>
-    <script>
-      // Cargar el menú desde el archivo externo
-      document.addEventListener("DOMContentLoaded", function() {
-        fetch('menu.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('menu').innerHTML = data;
-          });
-      });
-    </script>
+  <script>
+    // Cargar el menú desde el archivo externo
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        // Llamar a la función que agrega la clase 'active' después de cargar el menú
+        marcarMenuActivo();
+        });
+    });
+
+    function marcarMenuActivo() {
+    // Obtener la URL actual
+    const currentUrl = window.location.pathname;
+
+    // Seleccionar todos los elementos <li> con la clase 'nav-item' en el menú
+    const menuItems = document.querySelectorAll('#menu .nav-item');
+
+    // Remover la clase 'active' de todos los elementos <li>
+    menuItems.forEach(item => item.classList.remove('active'));
+    
+    // Seleccionar el elemento <li> con el id 'servicios' en el menú cargado
+    const serviciosItem = document.getElementById('nosotros');
+
+    // Verificar si el elemento existe y la URL termina en 'services.html'
+    if (serviciosItem && currentUrl.endsWith('about.html')) {
+      // Agregar la clase 'active' si coincide
+      serviciosItem.classList.add('active');
+    }
+  }
+  </script>
 
   </body>
 </html>
