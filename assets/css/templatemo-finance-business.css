@@ -541,7 +541,8 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/Mesa\ de\ trabajo\ 1@4x-3.png);
+	/*background-image: url(../images/Mesa\ de\ trabajo\ 1@4x-3.png);*/
+	background-image: url(../images/banner.jpg);
 	background-color: #091e2b;
 }
 
