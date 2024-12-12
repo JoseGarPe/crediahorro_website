@@ -534,10 +534,11 @@ header .navbar {
 }
 
 .Modern-Slider .item .img-fill {
+	margin-top: 10px;
 	background-size: cover;
-	background-position: center center;
+	background-position: center top;
 	background-repeat: no-repeat;
-	height:95vh;
+	height:86vh;
 }
 
 .Modern-Slider .item-1 .img-fill {
